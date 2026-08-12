@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">វ៉ាន់ណែត — អ្នករចនាក្រាហ្វិក</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.documentElement.dataset.theme = "dark";
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="#home" class="logo">វ៉ាន់ណែត</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav-about"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>អំពីខ្ញុំ</a>
+        <a href="#services" data-i18n="nav-services"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>សេវាកម្ម</a>
+        <a href="#work" data-i18n="nav-work"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>ស្នាដៃ</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav-contact"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>ទំនាក់ទំនង</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="ប្ដូររូបរាងងងឹត/ភ្លឺ">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="ប្ដូរភាសា">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="បើកម៉ឺនុយ">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greet" data-i18n="hero-greet">ជំរាបសួរ! ខ្ញុំឈ្មោះ វ៉ាន់ណែត</p>
+          <h1 data-i18n="hero-title">ខ្ញុំជាអ្នករចនាក្រាហ្វិក</h1>
+          <p class="hero-sub" data-i18n="hero-sub">
+            ខ្ញុំទទួលរចនាផ្ទាំងផ្សាយពាណិជ្ជកម្ម និងការងារឌីហ្សាញផ្សេងៗ
+            ដើម្បីជួយឱ្យអាជីវកម្មរបស់អ្នកកាន់តែលេចធ្លោ និងទាក់ទាញខ្លាំងឡើង។
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary" data-i18n="hero-cta1">មើលស្នាដៃរបស់ខ្ញុំ</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero-cta2">ទាក់ទងមកខ្ញុំ</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="photo.jpg" alt="វ៉ាន់ណែត">
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label" data-i18n="services-label">សេវាកម្មរបស់ខ្ញុំ</p>
+          <h2 data-i18n="services-title">អ្វីដែលខ្ញុំអាចជួយអ្នកបាន</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service">
+            <div class="service-icon">📄</div>
+            <h3 data-i18n="s1-title">ផ្ទាំងផ្សាយពាណិជ្ជកម្ម</h3>
+            <p data-i18n="s1-desc">Poster, banner, flyer សម្រាប់ផ្សព្វផ្សាយអាជីវកម្មរបស់អ្នក។</p>
+          </article>
+          <article class="service">
+            <div class="service-icon">🏷️</div>
+            <h3 data-i18n="s2-title">ការរចនាអត្តសញ្ញាណម៉ាក</h3>
+            <p data-i18n="s2-desc">Logo និងពណ៌ ដើម្បីឱ្យម៉ាករបស់អ្នកមានអត្តសញ្ញាណច្បាស់លាស់។</p>
+          </article>
+          <article class="service">
+            <div class="service-icon">🎨</div>
+            <h3 data-i18n="s3-title">រូបគំនូរ និងការរចនាផ្សេងៗ</h3>
+            <p data-i18n="s3-desc">រូបគំនូរតាមតម្រូវការ សម្រាប់គម្រោងពិសេសរបស់អ្នក។</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label" data-i18n="skills-label">ជំនាញរបស់ខ្ញុំ</p>
+          <h2 data-i18n="skills-title">កម្មវិធីដែលខ្ញុំប្រើ</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill" style="--pct: 80%">
+            <div class="skill-head">
+              <img src="img/skills/photoshop.png" alt="Photoshop">
+              <span>Photoshop</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill" style="--pct: 70%">
+            <div class="skill-head">
+              <img src="img/skills/illustrator.png" alt="Illustrator">
+              <span>Illustrator</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill" style="--pct: 70%">
+            <div class="skill-head">
+              <img src="img/skills/indesign.png" alt="InDesign">
+              <span>InDesign</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill" style="--pct: 20%">
+            <div class="skill-head">
+              <img src="img/skills/after-effects.png" alt="After Effects">
+              <span>After Effects</span>
+              <span class="skill-pct">20%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill" style="--pct: 70%">
+            <div class="skill-head">
+              <img src="img/skills/capcut.png" alt="CapCut">
+              <span>CapCut</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill" style="--pct: 65%">
+            <div class="skill-head">
+              <img src="img/skills/premiere.png" alt="Premiere Pro">
+              <span>Premiere Pro</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label" data-i18n="work-label">ស្នាដៃរបស់ខ្ញុំ</p>
+          <h2 data-i18n="work-title">ស្នាដៃមួយចំនួនដែលខ្ញុំបានរចនា</h2>
+          <p class="section-note" data-i18n="work-note">ចុចលើរូបភាព ដើម្បីមើលទំហំធំ។</p>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="f-all">ទាំងអស់</button>
+          <button class="filter-btn" data-filter="poster" data-i18n="f-poster">ផ្ទាំងផ្សាយ</button>
+          <button class="filter-btn" data-filter="banner" data-i18n="f-banner">បដា</button>
+          <button class="filter-btn" data-filter="logo" data-i18n="f-logo">ស្លាកសញ្ញា</button>
+        </div>
+
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        <p class="section-label" data-i18n="contact-label">ទំនាក់ទំនងមកខ្ញុំ</p>
+        <h2 data-i18n="contact-title">ចាប់អារម្មណ៍លើការរចនាមែនទេ?</h2>
+        <p data-i18n="contact-desc">សូមទាក់ទងមកខ្ញុំតាមអ៊ីមែល ឬ Telegram ខ្ញុំឆ្លើយតបលឿនបំផុត។</p>
+        <div class="footer-contact">
+          <a href="mailto:ouvannet81@gmail.com" class="btn btn-primary btn-email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            ouvannet81@gmail.com
+          </a>
+          <a href="https://t.me/OU_VANNET6_12_25" target="_blank" rel="noopener" class="btn btn-primary btn-telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 2.87a1.8 1.8 0 0 0-2.26-1.02L1.56 9.87c-1.68.65-1.55 3.06.2 3.52l4.85 1.28 1.86 5.88c.5 1.58 2.42 2.08 3.6.94l2.25-2.17 4.5 3.3a1.8 1.8 0 0 0 2.75-1.1zM6.9 13.43l10.7-6.64c.32-.2.66.27.38.5l-8.05 7.1a1.8 1.8 0 0 0-.58 1.16l-.36 3.1a.6.6 0 0 1-1.14.14l-1.2-4.24a.9.9 0 0 1 .23-.92z"/></svg>
+            @OU_VANNET6_12_25
+          </a>
+        </div>
+      </div>
+      <div class="footer-note">
+        <p data-i18n="footer-note">រក្សាសិទ្ធិ &copy; <span id="year"></span> វ៉ាន់ណែត</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="បិទ">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="មុន">&#8249;</button>
+    <figure class="lightbox-content">
+      <div class="lightbox-art" id="lightboxArt"></div>
+      <figcaption>
+        <h3 id="lightboxTitle"></h3>
+      </figcaption>
+    </figure>
+    <button class="lightbox-next" id="lightboxNext" aria-label="បន្ទាប់">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
